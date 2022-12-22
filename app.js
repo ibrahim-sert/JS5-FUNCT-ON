@@ -45,8 +45,21 @@
 
 //?    YA DA
 
-const oddOrEven = function (num) {
-  return num % 2 === 0 ? "EVEN" : "ODD";
+// const oddOrEven = function (num) {
+//   return num % 2 === 0 ? "EVEN" : "ODD";
+// };
+
+// console.log(oddOrEven(5));
+
+const findBiggest = function (n1, n2, n3) {
+  let biggest = n1;
+  if (n2 >= biggest) {
+    biggest = n2;
+  }
+  if (n3 >= biggest) {
+    biggest = n3;
+  }
+  return biggest;
 };
 
-console.log(oddOrEven(5));
+console.log(`The Biggest:${findBiggest(2, 1, 4)}`);
